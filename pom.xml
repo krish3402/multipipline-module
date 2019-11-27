@@ -42,6 +42,13 @@
                     <excludes>
                         <!--Insert excludes here.-->
                     </excludes>
+			
+                    <!-- Suite testng xml file to consider for test execution -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+            
                 </configuration>
             </plugin>
              <plugin>
@@ -92,6 +99,35 @@
                                 <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
                             </configuration>
                         </execution>
+			    <execution>
+                            <id>merge-results</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>merge</goal>
+                            </goals>
+                            <configuration>
+                                <fileSets>
+                                    <fileSet>
+                                        <directory>${project.build.directory}/coverage-reports</directory>
+                                        <includes>
+                                            <include>*.exec</include>
+                                        </includes>
+                                    </fileSet>
+                                </fileSets>
+                                <destFile>${project.build.directory}/coverage-reports/aggregate.exec</destFile>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>post-merge-report</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                            <configuration>
+                                <dataFile>${project.build.directory}/coverage-reports/aggregate.exec</dataFile>
+                                <outputDirectory>${project.reporting.outputDirectory}/jacoco-aggregate</outputDirectory>
+                            </configuration>
+                        </execution>
                         
                     </executions>
                 </plugin>		
@@ -105,6 +141,11 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
+        </dependency>
+	    <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.3.1</version>
         </dependency>
     </dependencies>
 </project>
