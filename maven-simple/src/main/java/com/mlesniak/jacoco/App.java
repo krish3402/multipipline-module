@@ -1,4 +1,4 @@
-package com.github.jitpack;
+package com.mlesniak.jacoco;
 
 /**
  * Hello world!
