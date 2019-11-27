@@ -34,5 +34,5 @@
                 </configuration>
             </plugin>
           </plugins>           
-</builds>
+</build>
 </project>
