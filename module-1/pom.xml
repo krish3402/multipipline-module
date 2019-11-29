@@ -13,18 +13,12 @@
          
          <build>
     <pluginManagement>
-      <plugins>
-        <plugin>
+      <plugins>   
+          <plugin>
           <groupId>net.revelc.code.formatter</groupId>
           <artifactId>formatter-maven-plugin</artifactId>
-          <dependencies>
-            <dependency>
-              <groupId>com.example</groupId>
-              <artifactId>build-tools</artifactId>
-          
-            </dependency>
-          </dependencies>
-        </plugin>
+          <version>2.11.0</version>
+        </plugin>      
       </plugins>
     </pluginManagement>
     </build>               
