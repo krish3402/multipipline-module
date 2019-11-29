@@ -135,7 +135,7 @@
               <goal>format</goal>
             </goals>
             <configuration>
-              <configFile>jacoco/formatter.xml</configFile>
+              <configFile>${project.reporting.outputDirectory}/jacoco-aggregate/jacoco.xml</configFile>
             </configuration>
           </execution>
         </executions>
