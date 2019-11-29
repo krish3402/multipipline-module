@@ -10,5 +10,20 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>module-1</artifactId>
-       
+       <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>net.revelc.code.formatter</groupId>
+          <artifactId>formatter-maven-plugin</artifactId>
+          <dependencies>
+            <dependency>
+              <groupId>com.example</groupId>
+              <artifactId>build-tools</artifactId>             
+            </dependency>
+          </dependencies>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+         </build>
 </project>
