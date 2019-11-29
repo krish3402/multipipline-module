@@ -127,8 +127,7 @@
                 </plugin>
 		<plugin>
           <groupId>net.revelc.code.formatter</groupId>
-          <artifactId>formatter-maven-plugin</artifactId>
-          <version>2.11.0</version>      
+          <artifactId>formatter-maven-plugin</artifactId>      
         <executions>
           <execution>
             <goals>
