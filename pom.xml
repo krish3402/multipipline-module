@@ -135,7 +135,7 @@
               <goal>format</goal>
             </goals>
             <configuration>
-              <configFile>formatter.xml</configFile>
+              <configFile>jacoco/formatter.xml</configFile>
             </configuration>
           </execution>
         </executions>
