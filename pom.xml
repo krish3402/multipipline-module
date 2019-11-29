@@ -135,7 +135,7 @@
               <goal>format</goal>
             </goals>
             <configuration>
-              <configFile>eformatter.xml</configFile>
+              <configFile>formatter.xml</configFile>
             </configuration>
           </execution>
         </executions>
