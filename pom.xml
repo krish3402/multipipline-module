@@ -71,7 +71,7 @@
       </execution>
    </executions>
    <configuration>
-      <serverId>nexus</serverId>
+      <serverId>snapshots</serverId>
       <nexusUrl>http://3.82.215.163:8080/nexus-latest/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
