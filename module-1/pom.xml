@@ -11,6 +11,5 @@
     </parent>
     <artifactId>module-1</artifactId> 
                   
-            <packaging>war</packaging>
                         
 </project>
