@@ -8,9 +8,9 @@
         <groupId>com.mlesniak.jacoco</groupId>
         <artifactId>module-main</artifactId>
         <version>1.0-SNAPSHOT</version>
-             <packaging>war</packaging>
     </parent>
     <artifactId>module-2</artifactId>
+             <packaging>war</packaging>
 
     <dependencies>
         <dependency>
