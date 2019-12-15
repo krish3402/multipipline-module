@@ -160,6 +160,11 @@
 
     </dependencies>
 	<distributionManagement>
+		<repository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://3.82.215.163:8080/nexus-latest/content/repositories/releases/</url>
+  </repository>  
    <snapshotRepository>
       <id>snapshots</id>
       <url>http://3.82.215.163:8080/nexus-latest/content/repositories/snapshots/</url>
