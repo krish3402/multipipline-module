@@ -3,7 +3,7 @@ pipeline {
 	stages {		
 		stage('Test') {
 			steps {
-				bat label: '', script: 'mvn deploy'
+				bat label: '', script: 'mvn clean deploy -Dorg.apache.maven.plugins:maven-compiler-plugin:3.8.1'
 			}
 		}
 		stage('Deploy') {
