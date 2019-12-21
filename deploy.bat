@@ -2,7 +2,7 @@ SET NODE1=maven-simple
 SET NODE2=module-1
 SET NODE3=module-2
 SET VERSION=1.0
-TOMCAT_HOME=c:\xampp\tomcat\webapps
+SET TOMCAT_HOME=c:\xampp\tomcat\webapps
 
 d:
 cd D:\tmp
