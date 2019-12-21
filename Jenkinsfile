@@ -3,7 +3,7 @@ pipeline {
 	stages {		
 		stage('Test') {
 			steps {
-				bat label: '', script: 'mvn deploy'
+				bat label: '', script: 'mvn deploy sonar:sonar'
 			}
 		}
 		stage('Deploy') {
