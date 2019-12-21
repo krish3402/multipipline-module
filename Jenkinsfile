@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('Deploy') {
 			steps {
-				echo "deploy"
+				bat label: '', script: 'deploy.bat'
 			}
 		}
 	}	
